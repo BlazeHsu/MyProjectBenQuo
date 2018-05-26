@@ -17,7 +17,8 @@
         android:text="@string/welcome"
         android:layout_weight="3"
         android:gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/logo_iv"
@@ -32,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/project_title"
-        android:layout_weight="3"
+        android:layout_weight="5"
         android:textSize="16dp"
         android:gravity="center"/>
 </LinearLayout>

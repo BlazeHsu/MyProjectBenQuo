@@ -1,5 +1,7 @@
 package tw.com.blazelisa.myprojectbenquo;
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -22,6 +24,13 @@ public class Welcome extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
 
         init();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(Welcome.this,GiudeActivity.class);
+                startActivity(intent);
+            }
+        },3000);
     }
 
     private void init() {

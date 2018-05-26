@@ -38,6 +38,8 @@ public class Welcome extends AppCompatActivity {
         context = findViewById(R.id.text_tv);
         logo = findViewById(R.id.logo_iv);
 //        Picasso.with(this).load(StaticOther.url+logo_url).into(logo);
+//        使用Glide套gif檔
         Glide.with(Welcome.this).asGif().load(StaticOther.url+logo_url).into(logo);
+
     }
 }

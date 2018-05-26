@@ -2,6 +2,7 @@ package tw.com.blazelisa.myprojectbenquo.model;
 
 import android.content.Context;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
@@ -31,5 +32,11 @@ public class MySingletton {
 
         }
         return mInstance;
+    }
+
+//  自訂泛型
+    public <T>void addToRequestQueue(Request<T> request){
+//       近來會使用甚麼型態就用只能是同一種形態
+        getRequestQueue().add(request);
     }
 }
